@@ -10,12 +10,12 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 @Builder
-public class ModuleDTO {
+public class CompilableModuleDTO {
     final UUID id;
     
     final String title;
     final String description;
     final String pdfPath;
     
-    final Set<FieldDTO> fields;
+    final Set<CompilableFieldDTO> fields;
 }
